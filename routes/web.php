@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Dev =================================
+Route::get('dev/route1', 'DevController@route1');
+
+// ChoreManager ========================
+Route::get('choremanager/task', 'ChoreManager@getTaskIndex');
+
+Route::get('choremanager/job', 'ChoreManager@getJobIndex');
+Route::get('choremanager/createjob');
